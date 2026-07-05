@@ -1,0 +1,20 @@
+.display-block {
+    display: block;
+    height: 200px;
+    background-color: blue;
+    border: 1px solid #6166ae;
+}
+
+.display-inline {
+    display: inline;
+    background-color: rgb(255, 81, 0);
+    border: 1px solid #b54a4a;
+}
+
+.display-inline-block {
+    display: inline-block;
+    height: 50px;
+    background-color: rgb(30, 255, 0);
+    border: 1px solid #4c8a4f;
+    margin-top: 15px;
+}

@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(56, 56, 56);
+    position: sticky;
+    top: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.content {
+    padding: 10px;
+    background-color: rgb(159, 159, 159);
+    border-radius: 3px;
+}
+
+
+
+footer {
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}

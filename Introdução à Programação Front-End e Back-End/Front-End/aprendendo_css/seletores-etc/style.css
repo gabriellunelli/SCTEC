@@ -1,0 +1,48 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: burlywood;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+}
+
+/* seletor de irmão adjacente */
+/* todo link(a) que vier logo depois de um parágrafo ganha estes valores */
+p + a {
+    color: red;
+}
+
+/* seletor irmão */
+/* todo link(a) que vier depois de um titulo menor ganha estes valores, sem necessariamente ter de ser logo após */
+h2 ~ a {
+    color: red;
+}
+
+/* seletor filho */
+/* todo link que estiver dentro de um paragrafo, será considerado "filho" de paragrafo */
+
+p > a {
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* seletor descendente */
+/* onde está algo como isso: <div> <p> <a> </a> </p> </div> */
+div a {
+    color: blueviolet;
+}
+/* seletor de classe */
+.maior {
+    font-size: 50px;
+}
+
+/* seletor de id */
+#menor {
+    font-size: 15px;
+}

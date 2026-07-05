@@ -1,0 +1,49 @@
+body {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    border: 1px solid #000;
+    background-color: burlywood;
+    color: white;
+    padding: 20px;
+    font-size: 50px;
+    top: 0;
+}
+
+.imagem-flutuante {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.subtitulo {
+    clear: both;
+}
+
+.relative {
+    position: relative;
+    height: 120px;
+    background-color: blue;
+}
+
+.absoluto {
+    position: absolute;
+    height: 50px;
+    background-color: rgb(105, 105, 255);
+    top: 0px;
+    right: 100px;
+    width: 50px;
+}
+
+.fixed {
+    background-color: aqua;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+}

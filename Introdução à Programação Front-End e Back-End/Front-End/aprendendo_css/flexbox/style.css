@@ -1,0 +1,27 @@
+.container {
+    background-color: antiquewhite;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    border: solid 1px #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#box1 {
+    background-color: blue;
+}
+
+#box2 {
+    background-color: rgb(72, 72, 254);
+}
+
+#box3 {
+    background-color: rgb(114, 114, 255);
+}
