@@ -58,7 +58,7 @@ function criarConta(titular) {
     return {
         depositar(valor){
             if(valor < 0){
-                
+                console.log('Deposite um valor válido!')
             }
             else{
                 return saldo += valor
@@ -66,14 +66,14 @@ function criarConta(titular) {
         },
         sacar(valor){
             if(valor > saldo){
-                
+                consoçe.log('Saque inválido!')
             }
             else{
                 return saldo -= valor
             }
         },
         extrato(){
-            console.log(saldo)
+            console.log(`${titular} - R$${saldo}`)
         }
     }
 }
@@ -86,7 +86,7 @@ conta1.extrato()
 conta1.sacar(250)
 conta1.extrato()
 
-conta2.depositar(500)
+conta2.depositar(5000)
 conta2.extrato()
 conta2.sacar(250)
 conta2.extrato()
