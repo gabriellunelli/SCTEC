@@ -3,7 +3,7 @@ import { alinhar, formatarReal, repetir } from "./formatacao";
 
 export function exibirCabecalho(titulo:string):void {
     console.log(repetir('='))
-    console.log(` ${titulo.toUpperCase}`)
+    console.log(titulo.toUpperCase())
     console.log(
         ' ' + alinhar('CÓDIGO', 10) +
         alinhar('USUÁRIO', 15) +
