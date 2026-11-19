@@ -1,5 +1,19 @@
 import express from "express";
 import type { Request, Response } from "express";
+import type { Tarefa, NovaTarefa, AtualizarTarefa } from "./types/tarefa.js";
+
+
+const tarefas: Tarefa[] = [
+    { id: 1, titulo: "Estudar Express", concluida: false }
+];
+let proximoId = 2;
+const NAO_ENCONTRADO = { erro: 'Tarefa não encontrada' };
+
+type ReqID = Request<{ id: string }>;
+type ReqAtualizar = Request<{ id: string }, {}, AtualizarTarefa>;
+type ReqCriar = Request<{}, {}, NovaTarefa>;
+type ReqFiltro = Request<{}, {}, {}, { concluida?: string }>;
+
 
 const app = express();
 const PORT = 3000
